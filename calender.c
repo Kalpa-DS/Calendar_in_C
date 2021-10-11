@@ -92,7 +92,13 @@ int check_leapYear(int year){ //checks whether the year passed is leap year or n
     return 0;
 }
 
-//increase the month by one
+void increase_month(int *mm,  int *yy){ 
+    ++*mm;
+    if(*mm > 12){
+        ++*yy;
+        *mm = *mm - 12;
+    }
+}
 
 //*******
 
