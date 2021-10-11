@@ -206,6 +206,26 @@ int checkNote(int dd, int mm){
 
 
 //prints the month with all days
+void printMonth(int mon,int year,int x,int y){ 
+    int nod, day, cnt, d = 1, x1 = x, y1 = y, isNote = 0;
+    if(!(mon>=1 && mon<=12)){
+        printf("INVALID MONTH");
+        getch();
+        return;
+    }
+    if(!(year>=1600)){
+        printf("INVALID YEAR");
+        getch();
+        return;
+    }
+    gotoxy(20,y);
+    print_date(mon,year);
+    y += 3;
+    gotoxy(x,y);
+    printf("S   M   T   W   T   F   S   ");
+    y++;
+    nod = getNumberOfDays(mon,year);
+    day = getDayNumber(d,mon,year);
 
 //********
 
