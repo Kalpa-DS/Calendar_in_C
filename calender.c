@@ -149,12 +149,7 @@ char *getName(int day){
 //********
 
 
-
-
-
 //prints the name of month and year
-
-
 void print_date(int mm, int yy){ 
     printf("---------------------------\n");
     gotoxy(25,6);
@@ -175,9 +170,8 @@ void print_date(int mm, int yy){
     printf(" , %d", yy);
     gotoxy(20,7);
     printf("---------------------------");
-}
-}
-//*********
+
+    //********
 
 
 
