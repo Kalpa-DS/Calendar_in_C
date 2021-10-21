@@ -146,10 +146,10 @@ char *getName(int day){
       default:return("Error in getName() module.Invalid argument passed");
    }
 }
-//********
 
 
-//prints the name of month and year
+
+
 void print_date(int mm, int yy){ 
     printf("---------------------------\n");
     gotoxy(25,6);
@@ -171,7 +171,7 @@ void print_date(int mm, int yy){
     gotoxy(20,7);
     printf("---------------------------");
 
-    //********
+
 
 
 
